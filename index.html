@@ -1,0 +1,944 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="./style.css" />
+    <title>bootstrap</title>
+  </head>
+  <body>
+    <div class="navbar navbar-expand-lg navbar-dark bg-black">
+      <div class="container-fluid">
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav w-100 justify-content-around">
+            <li class="nav-item">
+              <a class="nav-link active fs-5 text" aria-current="page" href="#"
+                >Контакты</a
+              >
+            </li>
+            <li class="nav-item">
+              <a class="nav-link active fs-5 text" href="#">Новости и акции</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link active fs-5 text" href="#">Вход/Регистрация</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-black">
+      <div class="container-fluid">
+        <a class="navbar-brand ms-5" href="#"
+          ><img
+            src="./img/b66d8c2e7d943778ecbca34ed913e726.png"
+            alt=""
+            width="190"
+            height="73"
+        /></a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent ">
+          <ul
+            class="navbar-nav me-auto mb-2 mb-lg-0 w-100 justify-content-around"
+          >
+            <li class="nav-item">
+              <a class="nav-link active fs-5 text" aria-current="page" href="tel:+123"
+                >Заказать звонок</a
+              >
+            </li>
+            <form class="d-flex" style="max-width: 500px; width: 100%">
+              <input
+                class="form-control me-2"
+                type="search"
+                placeholder="Поиск товаров..."
+                aria-label="Search"
+              />
+              <button class="btn btn-outline-success link active fs-5 text" type="submit">
+                Поиск
+              </button>
+            </form>
+            <li class="nav-item">
+              <a class="nav-link active fs-5 text" href="#">Помощь</a>
+            </li>
+
+            <li class="nav-item">
+              <a
+                class="nav-link active fs-5 text"
+                href="#"
+                tabindex="-1"
+                aria-disabled="true"
+                >Корзина</a
+              >
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+    <hr class="bg-success m-0" style="height: 5px; opacity: 1" />
+    <div class="navbar navbar-expand-lg navbar-dark bg-black">
+      <div class="container-fluid d-flex">
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav w-100 justify-content-center">
+            <li class="nav-item dropdown me-5">
+              <a
+                class="nav-link active dropdown-toggle fs-5 text"
+                href="#"
+                id="navbarDropdown"
+                role="button"
+                data-bs-toggle="dropdown"
+                aria-expanded="false"
+              >
+                Велосипеды
+              </a>
+              <ul
+                class="dropdown-menu bg-success"
+                aria-labelledby="navbarDropdown"
+              >
+                <li>
+                  <a class="dropdown-item text-white bg-success" href="#"
+                    >Горные</a
+                  >
+                </li>
+                <li><hr class="dropdown-divider bg-black" /></li>
+                <li>
+                  <a class="dropdown-item text-white bg-success" href="#"
+                    >Трековые</a
+                  >
+                </li>
+                <li><hr class="dropdown-divider bg-black" /></li>
+                <li>
+                  <a class="dropdown-item text-white bg-success" href="#"
+                    >Шоссейные</a
+                  >
+                </li>
+              </ul>
+            </li>
+            <li class="nav-item dropdown me-5">
+              <a
+                class="nav-link active dropdown-toggle fs-5 text"
+                href="#"
+                id="navbarDropdown"
+                role="button"
+                data-bs-toggle="dropdown"
+                aria-expanded="false"
+              >
+                Аксессуары
+              </a>
+              <ul
+                class="dropdown-menu bg-success"
+                aria-labelledby="navbarDropdown"
+              >
+                <li>
+                  <a class="dropdown-item text-white bg-success" href="#"
+                    >Горные</a
+                  >
+                </li>
+                <li><hr class="dropdown-divider bg-black" /></li>
+                <li>
+                  <a class="dropdown-item text-white bg-success" href="#"
+                    >Трековые</a
+                  >
+                </li>
+                <li><hr class="dropdown-divider bg-black" /></li>
+                <li>
+                  <a class="dropdown-item text-white bg-success" href="#"
+                    >Шоссейные</a
+                  >
+                </li>
+              </ul>
+            </li>
+            <li class="nav-item dropdown me-5">
+              <a
+                class="nav-link active dropdown-toggle fs-5 text"
+                href="#"
+                id="navbarDropdown"
+                role="button"
+                data-bs-toggle="dropdown"
+                aria-expanded="false"
+              >
+                Веломастерская
+              </a>
+              <ul
+                class="dropdown-menu bg-success"
+                aria-labelledby="navbarDropdown"
+              >
+                <li>
+                  <a class="dropdown-item text-white bg-success" href="#"
+                    >Горные</a
+                  >
+                </li>
+                <li><hr class="dropdown-divider bg-black" /></li>
+                <li>
+                  <a class="dropdown-item text-white bg-success" href="#"
+                    >Трековые</a
+                  >
+                </li>
+                <li><hr class="dropdown-divider bg-black" /></li>
+                <li>
+                  <a class="dropdown-item text-white bg-success" href="#"
+                    >Шоссейные</a
+                  >
+                </li>
+              </ul>
+            </li>
+            <li class="nav-item dropdown me-5">
+              <a
+                class="nav-link active dropdown-toggle fs-5 text"
+                href="#"
+                id="navbarDropdown"
+                role="button"
+                data-bs-toggle="dropdown"
+                aria-expanded="false"
+              >
+                Самокаты
+              </a>
+              <ul
+                class="dropdown-menu bg-success"
+                aria-labelledby="navbarDropdown"
+              >
+                <li>
+                  <a class="dropdown-item text-white bg-success" href="#"
+                    >Горные</a
+                  >
+                </li>
+                <li><hr class="dropdown-divider bg-black" /></li>
+                <li>
+                  <a class="dropdown-item text-white bg-success" href="#"
+                    >Трековые</a
+                  >
+                </li>
+                <li><hr class="dropdown-divider bg-black" /></li>
+                <li>
+                  <a class="dropdown-item text-white bg-success" href="#"
+                    >Шоссейные</a
+                  >
+                </li>
+              </ul>
+            </li>
+            <li class="nav-item dropdown me-5">
+              <a
+                class="nav-link active dropdown-toggle fs-5 text"
+                href="#"
+                id="navbarDropdown"
+                role="button"
+                data-bs-toggle="dropdown"
+                aria-expanded="false"
+              >
+                Магазины
+              </a>
+              <ul
+                class="dropdown-menu bg-success"
+                aria-labelledby="navbarDropdown"
+              >
+                <li>
+                  <a class="dropdown-item text-white bg-success" href="#"
+                    >Горные</a
+                  >
+                </li>
+                <li><hr class="dropdown-divider bg-black" /></li>
+                <li>
+                  <a class="dropdown-item text-white bg-success" href="#"
+                    >Трековые</a
+                  >
+                </li>
+                <li><hr class="dropdown-divider bg-black" /></li>
+                <li>
+                  <a class="dropdown-item text-white bg-success" href="#"
+                    >Шоссейные</a
+                  >
+                </li>
+              </ul>
+            </li>
+            <li class="nav-item dropdown me-5">
+              <a
+                class="nav-link active dropdown-toggle fs-5 text"
+                href="#"
+                id="navbarDropdown"
+                role="button"
+                data-bs-toggle="dropdown"
+                aria-expanded="false"
+              >
+                Рпссрочка
+              </a>
+              <ul
+                class="dropdown-menu bg-success"
+                aria-labelledby="navbarDropdown"
+              >
+                <li>
+                  <a class="dropdown-item text-white bg-success" href="#"
+                    >Горные</a
+                  >
+                </li>
+                <li><hr class="dropdown-divider bg-black" /></li>
+                <li>
+                  <a class="dropdown-item text-white bg-success" href="#"
+                    >Трековые</a
+                  >
+                </li>
+                <li><hr class="dropdown-divider bg-black" /></li>
+                <li>
+                  <a class="dropdown-item text-white bg-success" href="#"
+                    >Шоссейные</a
+                  >
+                </li>
+              </ul>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <div
+      id="carouselExampleIndicators"
+      class="carousel slide"
+      data-bs-ride="carousel"
+    >
+      <div class="carousel-indicators">
+        <button
+          type="button"
+          data-bs-target="#carouselExampleIndicators"
+          data-bs-slide-to="0"
+          class="active"
+          aria-current="true"
+          aria-label="Slide 1"
+        ></button>
+        <button
+          type="button"
+          data-bs-target="#carouselExampleIndicators"
+          data-bs-slide-to="1"
+          aria-label="Slide 2"
+        ></button>
+        <button
+          type="button"
+          data-bs-target="#carouselExampleIndicators"
+          data-bs-slide-to="2"
+          aria-label="Slide 3"
+        ></button>
+      </div>
+      <div class="carousel-inner">
+        <div class="carousel-item active">
+          <img
+            src="./img/1b70577a0ab31fdefba06a290d58a470.jpg"
+            class="d-block w-100"
+            alt="..."
+          />
+        </div>
+        <div class="carousel-item">
+          <img
+            src="./img/c1c275e491877ea3dbe67fc906b717e4.png"
+            class="d-block w-100"
+            alt="..."
+          />
+        </div>
+        <div class="carousel-item">
+          <img
+            src="./img/859d9c13fda47284c7d60a5c7c3d179d.png"
+            class="d-block w-100"
+            alt="..."
+          />
+        </div>
+      </div>
+      <button
+        class="carousel-control-prev"
+        type="button"
+        data-bs-target="#carouselExampleIndicators"
+        data-bs-slide="prev"
+      >
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Предыдущий</span>
+      </button>
+      <button
+        class="carousel-control-next"
+        type="button"
+        data-bs-target="#carouselExampleIndicators"
+        data-bs-slide="next"
+      >
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Следующий</span>
+      </button>
+    </div>
+    <div class="container" style="height: auto; max-width: 1200px;">
+      <div class="row justify-content-around">
+        <div
+          class="card bg-light mt-5 bg-white rounded"
+          style="max-width: 250px; height: 450px"
+        >
+          <a href="#"
+            ><img class="mt-5" src="./img/cards_icon_1.jpg" alt=""
+          /></a>
+          <div class="card-body d-flex flex-column" style="flex: 0;">
+            <a
+              class="card-title text-decoration-none text-reset"
+              style="opacity: 0.6"
+              href="#"
+            >
+              Novatrack</a
+            >
+            <a class="card-text text-decoration-none text-reset" href="#">
+              Беговел 12" NOVATRACK Magic фиолетовый</a
+            >
+            <a
+              class="card-title text-decoration-none text-warning d-flex mt-2"
+              href="#"
+            >
+              <span class="badge"
+                ><img
+                  src="./img/depositphotos_10668063-stock-photo-check-mark (1).jpg"
+                  alt="" /></span
+              >Мало</a
+            >
+            <a class="fs-5 text-decoration-none text-black" href="#"
+              >182 руб.</a
+            >
+          </div>
+          <div class="accordion accordion-flush " id="accordionFlushExample">
+            <div class="accordion-item">
+              <h2 class="accordion-header" id="flush-headingOne">
+                <button
+                  class="accordion-button collapsed pt-0 open"
+                  type="button"
+                  data-bs-toggle="collapse"
+                  data-bs-target="#flush-collapseOne"
+                  aria-expanded="false"
+                  aria-controls="flush-collapseOne"
+                >
+                  Характеристики велосипеда
+                </button>
+              </h2>
+              <div
+                id="flush-collapseOne"
+                class="accordion-collapse collapse"
+                aria-labelledby="flush-headingOne"
+                data-bs-parent="#accordionFlushExample"
+              >
+                <div class="accordion-body bg-success text-white">
+                  Placeholder content for this accordion, which is intended to
+                  demonstrate the <code>.accordion-flush</code> class. This is
+                  the first item's accordion body.
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div
+          class="card bg-light mt-5 bg-white rounded"
+          style="max-width: 250px; max-height: 450px"
+        >
+          <a href="#"
+            ><img class="mt-5" src="./img/cards_icon_1.jpg" alt=""
+          /></a>
+          <div class="card-body d-flex flex-column" style="flex: 0;">
+            <a
+              class="card-title text-decoration-none text-reset"
+              style="opacity: 0.6"
+              href="#"
+            >
+              Novatrack</a
+            >
+            <a class="card-text text-decoration-none text-reset" href="#">
+              Беговел 12" NOVATRACK Magic фиолетовый</a
+            >
+            <a
+              class="card-title text-decoration-none text-warning d-flex mt-2"
+              href="#"
+            >
+              <span class="badge"
+                ><img
+                  src="./img/depositphotos_10668063-stock-photo-check-mark (1).jpg"
+                  alt="" /></span
+              >Мало</a
+            >
+            <a class="fs-5 text-decoration-none text-black" href="#"
+              >182 руб.</a
+            >
+          </div>
+          <div class="accordion accordion-flush" id="accordionFlushExample">
+            <div class="accordion-item">
+              <h2 class="accordion-header" id="flush-headingOne">
+                <button
+                  class="accordion-button collapsed pt-0"
+                  type="button"
+                  data-bs-toggle="collapse"
+                  data-bs-target="#flush-collapseOne_2"
+                  aria-expanded="false"
+                  aria-controls="flush-collapseOne"
+                >
+                  Характеристики велосипеда
+                </button>
+              </h2>
+              <div
+                id="flush-collapseOne_2"
+                class="accordion-collapse collapse"
+                aria-labelledby="flush-headingOne"
+                data-bs-parent="#accordionFlushExample"
+              >
+                <div class="accordion-body bg-success text-white">
+                  Placeholder content for this accordion, which is intended to
+                  demonstrate the <code>.accordion-flush</code> class. This is
+                  the first item's accordion body.
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div
+          class="card bg-light mt-5 bg-white rounded"
+          style="max-width: 250px; max-height: 450px"
+        >
+          <a href="#"
+            ><img class="mt-5" src="./img/cards_icon_1.jpg" alt=""
+          /></a>
+          <div class="card-body d-flex flex-column " style="flex: 0;">
+            <a
+              class="card-title text-decoration-none text-reset"
+              style="opacity: 0.6"
+              href="#"
+            >
+              Novatrack</a
+            >
+            <a class="card-text text-decoration-none text-reset" href="#">
+              Беговел 12" NOVATRACK Magic фиолетовый</a
+            >
+            <a
+              class="card-title text-decoration-none text-warning d-flex mt-2"
+              href="#"
+            >
+              <span class="badge"
+                ><img
+                  src="./img/depositphotos_10668063-stock-photo-check-mark (1).jpg"
+                  alt="" /></span
+              >Мало</a
+            >
+            <a class="fs-5 text-decoration-none text-black" href="#"
+              >182 руб.</a
+            >
+          </div>
+          <div class="accordion accordion-flush" id="accordionFlushExample">
+            <div class="accordion-item">
+              <h2 class="accordion-header" id="flush-headingOne">
+                <button
+                  class="accordion-button collapsed pt-0"
+                  type="button"
+                  data-bs-toggle="collapse"
+                  data-bs-target="#flush-collapseOne_3"
+                  aria-expanded="false"
+                  aria-controls="flush-collapseOne"
+                >
+                  Характеристики велосипеда
+                </button>
+              </h2>
+              <div
+                id="flush-collapseOne_3"
+                class="accordion-collapse collapse"
+                aria-labelledby="flush-headingOne"
+                data-bs-parent="#accordionFlushExample"
+              >
+                <div class="accordion-body bg-success text-white">
+                  Placeholder content for this accordion, which is intended to
+                  demonstrate the <code>.accordion-flush</code> class. This is
+                  the first item's accordion body.
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div
+          class="card bg-light mt-5 bg-white rounded"
+          style="max-width: 250px; max-height: 450px"
+        >
+          <a href="#"
+            ><img class="mt-5" src="./img/cards_icon_1.jpg" alt=""
+          /></a>
+          <div class="card-body d-flex flex-column" style="flex: 0;">
+            <a
+              class="card-title text-decoration-none text-reset"
+              style="opacity: 0.6"
+              href="#"
+            >
+              Novatrack</a
+            >
+            <a class="card-text text-decoration-none text-reset" href="#">
+              Беговел 12" NOVATRACK Magic фиолетовый</a
+            >
+            <a
+              class="card-title text-decoration-none text-warning d-flex mt-2"
+              href="#"
+            >
+              <span class="badge"
+                ><img
+                  src="./img/depositphotos_10668063-stock-photo-check-mark (1).jpg"
+                  alt="" /></span
+              >Мало</a
+            >
+            <a class="fs-5 text-decoration-none text-black" href="#"
+              >182 руб.</a
+            >
+          </div>
+          <div class="accordion accordion-flush" id="accordionFlushExample">
+            <div class="accordion-item">
+              <h2 class="accordion-header" id="flush-headingOne">
+                <button
+                  class="accordion-button collapsed pt-0"
+                  type="button"
+                  data-bs-toggle="collapse"
+                  data-bs-target="#flush-collapseOne_4"
+                  aria-expanded="false"
+                  aria-controls="flush-collapseOne"
+                >
+                  Характеристики велосипеда
+                </button>
+              </h2>
+              <div
+                id="flush-collapseOne_4"
+                class="accordion-collapse collapse"
+                aria-labelledby="flush-headingOne"
+                data-bs-parent="#accordionFlushExample"
+              >
+                <div class="accordion-body bg-success text-white">
+                  Placeholder content for this accordion, which is intended to
+                  demonstrate the <code>.accordion-flush</code> class. This is
+                  the first item's accordion body.
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div
+          class="card bg-light mt-5 bg-white rounded"
+          style="max-width: 250px; max-height: 450px"
+        >
+          <a href="#"
+            ><img class="mt-5" src="./img/cards_icon_1.jpg" alt=""
+          /></a>
+          <div class="card-body d-flex flex-column" style="flex: 0;">
+            <a
+              class="card-title text-decoration-none text-reset"
+              style="opacity: 0.6"
+              href="#"
+            >
+              Novatrack</a
+            >
+            <a class="card-text text-decoration-none text-reset" href="#">
+              Беговел 12" NOVATRACK Magic фиолетовый</a
+            >
+            <a
+              class="card-title text-decoration-none text-warning d-flex mt-2"
+              href="#"
+            >
+              <span class="badge"
+                ><img
+                  src="./img/depositphotos_10668063-stock-photo-check-mark (1).jpg"
+                  alt="" /></span
+              >Мало</a
+            >
+            <a class="fs-5 text-decoration-none text-black" href="#"
+              >182 руб.</a
+            >
+          </div>
+          <div class="accordion accordion-flush" id="accordionFlushExample">
+            <div class="accordion-item">
+              <h2 class="accordion-header" id="flush-headingOne">
+                <button
+                  class="accordion-button collapsed pt-0"
+                  type="button"
+                  data-bs-toggle="collapse"
+                  data-bs-target="#flush-collapseOne_5"
+                  aria-expanded="false"
+                  aria-controls="flush-collapseOne"
+                >
+                  Характеристики велосипеда
+                </button>
+              </h2>
+              <div
+                id="flush-collapseOne_5"
+                class="accordion-collapse collapse"
+                aria-labelledby="flush-headingOne"
+                data-bs-parent="#accordionFlushExample"
+              >
+                <div class="accordion-body bg-success text-white">
+                  Placeholder content for this accordion, which is intended to
+                  demonstrate the <code>.accordion-flush</code> class. This is
+                  the first item's accordion body.
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div
+        class="card bg-light mt-5 bg-white rounded"
+        style="max-width: 250px; max-height: 450px"
+      >
+        <a href="#"
+          ><img class="mt-5" src="./img/cards_icon_1.jpg" alt=""
+        /></a>
+        <div class="card-body d-flex flex-column" style="flex: 0;">
+          <a
+            class="card-title text-decoration-none text-reset"
+            style="opacity: 0.6"
+            href="#"
+          >
+            Novatrack</a
+          >
+          <a class="card-text text-decoration-none text-reset" href="#">
+            Беговел 12" NOVATRACK Magic фиолетовый</a
+          >
+          <a
+            class="card-title text-decoration-none text-warning d-flex mt-2"
+            href="#"
+          >
+            <span class="badge"
+              ><img
+                src="./img/depositphotos_10668063-stock-photo-check-mark (1).jpg"
+                alt="" /></span
+            >Мало</a
+          >
+          <a class="fs-5 text-decoration-none text-black" href="#"
+            >182 руб.</a
+          >
+        </div>
+        <div class="accordion accordion-flush" id="accordionFlushExample">
+          <div class="accordion-item">
+            <h2 class="accordion-header" id="flush-headingOne">
+              <button
+                class="accordion-button collapsed pt-0"
+                type="button"
+                data-bs-toggle="collapse"
+                data-bs-target="#flush-collapseOne_6"
+                aria-expanded="false"
+                aria-controls="flush-collapseOne"
+              >
+                Характеристики велосипеда
+              </button>
+            </h2>
+            <div
+              id="flush-collapseOne_6"
+              class="accordion-collapse collapse"
+              aria-labelledby="flush-headingOne"
+              data-bs-parent="#accordionFlushExample"
+            >
+              <div class="accordion-body bg-success text-white">
+                Placeholder content for this accordion, which is intended to
+                demonstrate the <code>.accordion-flush</code> class. This is
+                the first item's accordion body.
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div
+      class="card bg-light mt-5 bg-white rounded"
+      style="max-width: 250px; max-height: 450px"
+    >
+      <a href="#"
+        ><img class="mt-5" src="./img/cards_icon_1.jpg" alt=""
+      /></a>
+      <div class="card-body d-flex flex-column" style="flex: 0;">
+        <a
+          class="card-title text-decoration-none text-reset"
+          style="opacity: 0.6"
+          href="#"
+        >
+          Novatrack</a
+        >
+        <a class="card-text text-decoration-none text-reset" href="#">
+          Беговел 12" NOVATRACK Magic фиолетовый</a
+        >
+        <a
+          class="card-title text-decoration-none text-warning d-flex mt-2"
+          href="#"
+        >
+          <span class="badge"
+            ><img
+              src="./img/depositphotos_10668063-stock-photo-check-mark (1).jpg"
+              alt="" /></span
+          >Мало</a
+        >
+        <a class="fs-5 text-decoration-none text-black" href="#"
+          >182 руб.</a
+        >
+      </div>
+      <div class="accordion accordion-flush" id="accordionFlushExample">
+        <div class="accordion-item">
+          <h2 class="accordion-header" id="flush-headingOne">
+            <button
+              class="accordion-button collapsed pt-0"
+              type="button"
+              data-bs-toggle="collapse"
+              data-bs-target="#flush-collapseOne_7"
+              aria-expanded="false"
+              aria-controls="flush-collapseOne"
+            >
+              Характеристики велосипеда
+            </button>
+          </h2>
+          <div
+            id="flush-collapseOne_7"
+            class="accordion-collapse collapse"
+            aria-labelledby="flush-headingOne"
+            data-bs-parent="#accordionFlushExample"
+          >
+            <div class="accordion-body bg-success text-white">
+              Placeholder content for this accordion, which is intended to
+              demonstrate the <code>.accordion-flush</code> class. This is
+              the first item's accordion body.
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div
+    class="card bg-light mt-5 bg-white rounded"
+    style="max-width: 250px; height: 450px"
+  >
+    <a href="#"
+      ><img class="mt-5" src="./img/cards_icon_1.jpg" alt=""
+    /></a>
+    <div class="card-body d-flex flex-column" style="flex: 0;">
+      <a
+        class="card-title text-decoration-none text-reset"
+        style="opacity: 0.6"
+        href="#"
+      >
+        Novatrack</a
+      >
+      <a class="card-text text-decoration-none text-reset" href="#">
+        Беговел 12" NOVATRACK Magic фиолетовый</a
+      >
+      <a
+        class="card-title text-decoration-none text-warning d-flex mt-2"
+        href="#"
+      >
+        <span class="badge"
+          ><img
+            src="./img/depositphotos_10668063-stock-photo-check-mark (1).jpg"
+            alt="" /></span
+        >Мало</a
+      >
+      <a class="fs-5 text-decoration-none text-black" href="#"
+        >182 руб.</a
+      >
+    </div>
+    <div class="accordion accordion-flush" id="accordionFlushExample">
+      <div class="accordion-item">
+        <h2 class="accordion-header" id="flush-headingOne">
+          <button
+            class="accordion-button collapsed pt-0"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#flush-collapseOne_8"
+            aria-expanded="false"
+            aria-controls="flush-collapseOne"
+          >
+            Характеристики велосипеда
+          </button>
+        </h2>
+        <div
+          id="flush-collapseOne_8"
+          class="accordion-collapse collapse"
+          aria-labelledby="flush-headingOne"
+          data-bs-parent="#accordionFlushExample"
+        >
+          <div class="accordion-body bg-success text-white">
+            Placeholder content for this accordion, which is intended to
+            demonstrate the <code>.accordion-flush</code> class. This is
+            the first item's accordion body.
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+      </div>
+    </div>
+    <footer>
+      <div
+        class="container-fluid bg-black d-flex mt-5 justify-content-sm-around align-items-center flex-wrap"
+        style="min-height: 300px"
+      >
+        <div class="footer_info d-flex flex-column">
+          <a
+            class="fs-4 text text mb-3 text-decoration-none text-light"
+            href="#"
+            >Помощь</a
+          >
+          <a class="fs-6 text text-decoration-none text-light" href="#"
+            >Доставка</a
+          >
+          <a class="fs-6 text text-decoration-none text-light" href="#"
+            >Оплата</a
+          >
+          <a class="fs-6 text text-decoration-none text-light" href="#"
+            >Расрочка</a
+          >
+        </div>
+        <div class="footer_info d-flex flex-column">
+          <a
+            class="fs-4 text text mb-3 text-decoration-none text-light"
+            href="#"
+            >Информация</a
+          >
+          <a class="fs-6 text text-decoration-none text-light" href="#"
+            >О компании</a
+          >
+          <a class="fs-6 text text-decoration-none text-light" href="#"
+            >Контакты</a
+          >
+          <a class="fs-6 text text-decoration-none text-light" href="#"
+            >Магазины</a
+          >
+        </div>
+        <div class="footer_info d-flex flex-column">
+          <a
+            class="fs-4 text text mb-3 text-decoration-none text-light"
+            href="#"
+            >Дополнительно</a
+          >
+          <a class="fs-6 text text-decoration-none text-light" href="#"
+            >Новости и акции</a
+          >
+          <a class="fs-6 text text-decoration-none text-light" href="#"
+            >Ремонт веловипедов</a
+          >
+          <a class="fs-6 text text-decoration-none text-light" href="#"
+            >Отзывы</a
+          >
+        </div>
+        <div class="footer_info d-flex flex-column">
+          <a
+            class="fs-4 text text mb-3 text-decoration-none text-light"
+            href="#"
+            >Контактная информация</a
+          >
+          <a class="fs-6 text text-decoration-none text-light" href="tel:+123"
+            >+375(29)7777777</a
+          >
+          <a class="fs-6 text text-decoration-none text-light" href="tel:+123"
+            >+375(29)7777777</a
+          >
+          <a class="fs-6 text text-decoration-none text-light" href="#"
+            >Время работыж: Пн-Пт: 10.00-19.00</a
+          >
+        </div>
+      </div>
+    </footer>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>
